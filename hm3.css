@@ -1,5 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+    font-family: Arial, sans-serif; /* تعيين خط الصفحة */
+    background-color: #f4f4f4; /* تعيين لون خلفية الصفحة */
+    display: flex; /* استخدام Flexbox لمحاذاة المحتوى */
+    justify-content: center; /* محاذاة المحتوى أفقياً */
+    align-items: center; /* محاذاة المحتوى عمودياً */
+    height: 100vh; /* تعيين ارتفاع الصفحة لتغطية الشاشة */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+}
+
+.container {
+    background: white; /* تعيين خلفية الحاوية إلى اللون الأبيض */
+    padding: 20px; /* إضافة مسافة داخلية حول الحاوية */
+    border-radius: 8px; /* إضافة حواف دائرية */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    width: 300px; /* تعيين عرض الحاوية */
+    text-align: center; /* محاذاة النص داخل الحاوية */
+}
+
+form {
+    display: flex; /* استخدام Flexbox داخل النموذج */
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+}
+
+label {
+    text-align: right; /* محاذاة النص إلى اليمين */
+    margin-bottom: 5px; /* إضافة مسافة أسفل العنوان */
+    font-weight: bold; /* جعل النص غامق */
+}
+
+input {
+    padding: 8px; /* إضافة مسافة داخلية للحقل */
+    margin-bottom: 10px; /* إضافة مسافة أسفل الحقل */
+    border: 1px solid #ccc; /* إضافة حدود خفيفة حول الحقل */
+    border-radius: 5px; /* إضافة حواف دائرية */
+}
+
+button {
+    background: #28a745; /* تعيين لون خلفية الزر */
+    color: white; /* تعيين لون النص في الزر */
+    padding: 10px; /* إضافة مسافة داخلية للزر */
+    border: none; /* إزالة الحدود الافتراضية للزر */
+    border-radius: 5px; /* إضافة حواف دائرية للزر */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور بالماوس */
+}
+
+button:hover {
+    background: #218838; /* تغيير لون الزر عند المرور عليه */
+}
+
+.error {
+    color: red; /* تعيين لون الخطأ إلى الأحمر */
+    font-size: 12px; /* تحديد حجم النص */
 }
