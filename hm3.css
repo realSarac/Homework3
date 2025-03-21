@@ -1,13 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+ font-family: Arial, sans-serif;
+background-color: #e0e0e0;
+ display: flex;
+justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
 }
-
 .container {
     background: white;
     padding: 20px;
@@ -16,37 +15,32 @@ body {
     width: 300px;
     text-align: center;
 }
-
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     text-align: right;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-input {
+input, button {
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+input {
+    border: 1px solid #ccc;
+}
 button {
     background: #28a745;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
+    cursor: pointer;
 }
-
 button:hover {
     background: #218838;
 }
-
 .error {
     color: red;
     font-size: 12px;
