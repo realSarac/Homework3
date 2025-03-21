@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html lang="ar"> <!-- تحديد أن اللغة الرئيسية للمحتوى هي اللغة العربية -->
+< html>
+<html lang="ar">
 <head>
-    <title>إنشاء حساب في موقع Rit Cafe</title> <!-- تحديد عنوان الصفحة الذي سيظهر في التبويب بالمتصفح -->
-    <link rel="stylesheet" href="hm3.css"> <!-- ربط الصفحة بملف CSS  -->
+    <title>إنشاء حساب في موقع Rit Cafe</title>
+    <link rel="stylesheet" href="hm3.css">
+    <link rel=
 </head>
 <body>
-    <div class="container"> <!-- حاوية رئيسية تحتوي على النموذج -->
-        <form id="signupForm"> <!-- النموذج الذي سيجمع بيانات المستخدم لإنشاء الحساب -->
-            <h2>إنشاء حساب جديد</h2> <!-- عنوان النموذج -->
-            
-            <!-- حقل الإدخال للاسم الأول -->
-            <label for="firstName">الاسم الأول</label> <!-- النص الذي يظهر بجانب الحقل -->
-            <input type="text" id="firstName" required> <!-- حقل نصي لإدخال الاسم الأول مع التحقق من تعبئته -->
-            
-            <!-- حقل الإدخال لاسم العائلة -->
+    <div class="container">
+        <form id="signupForm">
+            <h2>إنشاء حساب جديد</h2>
+            <label for="firstName">الاسم الأول</label>
+            <input type="text" id="firstName" required>
             <label for="lastName">اسم العائلة</label>
-            <input type="text" id="lastName" required> <!-- حقل نصي لإدخال اسم العائلة مع التحقق من تعبئته -->
-            
-            <!-- حقل الإدخال للبريد الإلكتروني -->
+            <input type="text" id="lastName" required>
             <label for="email">البريد الإلكتروني</label>
-            <input type="email" id="email" required> <!-- حقل بريد إلكتروني مع التحقق من تنسيقه الصحيح -->
-            
-            <!-- حقل الإدخال لكلمة المرور -->
+            <input type="email" id="email" required>
             <label for="password">كلمة المرور</label>
-            <input type="password" id="password" required> <!-- حقل كلمة المرور بحيث يظهر النص مشفراً -->
-            
-            <!-- حقل الإدخال لتأكيد كلمة المرور -->
+            <input type="password" id="password" required>
             <label for="confirmPassword">تأكيد كلمة المرور</label>
-            <input type="password" id="confirmPassword" required> <!-- حقل لتأكيد كلمة المرور -->
-            
-            <!-- رسالة الخطأ التي ستظهر إذا كانت كلمتا المرور غير متطابقتين -->
-            <p id="error-message" class="error"></p> <!-- الفقرة التي ستعرض رسالة الخطأ -->
-            
-            <!-- زر الإرسال للنموذج -->
-            <button type="submit">إنشاء الحساب</button> <!-- الزر الذي سيقوم بإرسال النموذج عند النقر عليه -->
+            <input type="password" id="confirmPassword" required>
+            <p id="error-message" class="error"></p>
+            <button type="submit">إنشاء الحساب</button>
         </form>
     </div>
 </body>
