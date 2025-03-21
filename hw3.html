@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar"> <!-- تحديد أن اللغة الرئيسية للمحتوى هي اللغة العربية -->
 <head>
-    <meta charset="UTF-8"> <!-- تحديد ترميز الحروف لدعم جميع الحروف الخاصة بكل اللغات -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ضبط إعدادات العرض لتتناسب مع حجم الشاشة على الأجهزة المختلفة -->
     <title>إنشاء حساب في موقع Rit Cafe</title> <!-- تحديد عنوان الصفحة الذي سيظهر في التبويب بالمتصفح -->
     <link rel="stylesheet" href="hm3.css"> <!-- ربط الصفحة بملف CSS  -->
 </head>
@@ -38,28 +36,5 @@
             <button type="submit">إنشاء الحساب</button> <!-- الزر الذي سيقوم بإرسال النموذج عند النقر عليه -->
         </form>
     </div>
-    
-    <script>
-        // دالة للتحقق من تطابق كلمة المرور مع تأكيد كلمة المرور
-        function checkPasswordMatch() {
-            let password = document.getElementById('password').value; // الحصول على قيمة كلمة المرور
-            let confirmPassword = document.getElementById('confirmPassword').value; // الحصول على قيمة تأكيد كلمة المرور
-            let errorMessage = document.getElementById('error-message'); // الحصول على عنصر الرسالة لعرض الخطأ
-          
-		  // إذا كانت كلمةالمرور وتأكيد كلمة المرور غير متطابقتين وكان حقل تأكيد كلمة المرور غير فارغ
-            if (password !== confirmPassword && confirmPassword.length > 0) {
-                errorMessage.textContent = "كلمتا المرور غير متطابقتين"; // عرض رسالة الخطأ
-                errorMessage.style.color = "red"; // تغيير لون الخط إلى الأحمر
-            } else {
-                errorMessage.textContent = ""; // مسح رسالة الخطأ في حال كانت كلمتا المرور متطابقتين
-            }
-        }
-        
-        // إضافة مستمع لحدث الإدخال في حقل كلمة المرور لتشغيل دالة التحقق عند ادخال نص
-        document.getElementById('password').addEventListener('input', checkPasswordMatch);
-        
-        // إضافة مستمع لحدث الإدخال في حقل تأكيد كلمة المرور لتشغيل دالة التحقق عند ادخال نص
-        document.getElementById('confirmPassword').addEventListener('input', checkPasswordMatch);
-    </script>
 </body>
 </html>
