@@ -1,54 +1,53 @@
 body {
-    font-family: Arial, sans-serif; /* تعيين خط الصفحة */
-    background-color: #f4f4f4; /* تعيين لون خلفية الصفحة */
-    display: flex; /* استخدام Flexbox لمحاذاة المحتوى */
-    justify-content: center; /* محاذاة المحتوى أفقياً */
-    align-items: center; /* محاذاة المحتوى عمودياً */
-    height: 100vh; /* تعيين ارتفاع الصفحة لتغطية الشاشة */
-    margin: 0; /* إزالة الهوامش الافتراضية */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background: white; /* تعيين خلفية الحاوية إلى اللون الأبيض */
-    padding: 20px; /* إضافة مسافة داخلية حول الحاوية */
-    border-radius: 8px; /* إضافة حواف دائرية */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-    width: 300px; /* تعيين عرض الحاوية */
-    text-align: center; /* محاذاة النص داخل الحاوية */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
 form {
-    display: flex; /* استخدام Flexbox داخل النموذج */
-    flex-direction: column; /* ترتيب العناصر عمودياً */
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    text-align: right; /* محاذاة النص إلى اليمين */
-    margin-bottom: 5px; /* إضافة مسافة أسفل العنوان */
-    font-weight: bold; /* جعل النص غامق */
+    text-align: right;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input {
-    padding: 8px; /* إضافة مسافة داخلية للحقل */
-    margin-bottom: 10px; /* إضافة مسافة أسفل الحقل */
-    border: 1px solid #ccc; /* إضافة حدود خفيفة حول الحقل */
-    border-radius: 5px; /* إضافة حواف دائرية */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    background: #28a745; /* تعيين لون خلفية الزر */
-    color: white; /* تعيين لون النص في الزر */
-    padding: 10px; /* إضافة مسافة داخلية للزر */
-    border: none; /* إزالة الحدود الافتراضية للزر */
-    border-radius: 5px; /* إضافة حواف دائرية للزر */
-    cursor: pointer; /* تغيير شكل المؤشر عند المرور بالماوس */
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 button:hover {
-    background: #218838; /* تغيير لون الزر عند المرور عليه */
+    background: #218838;
 }
 
 .error {
-    color: red; /* تعيين لون الخطأ إلى الأحمر */
-    font-size: 12px; /* تحديد حجم النص */
+    color: red;
+    font-size: 12px;
 }
