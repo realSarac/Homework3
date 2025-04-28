@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> تواصل معنا</title>
+	<style>
+	
+body {
+        font-family: 'Arial' , sans-serif;
+		background-color: white;
+		margin:0;
+	    padding:0;
+		color:#5A2D7D;
+	}	
+	
+.container { 
+        width: 85%;
+        margin: 30px auto;
+        background-color:white;
+        padding:25px;
+        border-radius:15px;
+        box-shadow: 0 5px 15px rgba(154,91,180,0.2);
+    }
+h1 { 
+        color:#9A5BB4;
+        text-align:center;
+        border-bottom:3px solid #FFB6C1;
+        padding-bottom:15px;
+        font-size:2.2em;
+        margin-bottom:30px;
+    }
+.logo{ 
+        text-align:center;
+        margin-bottom:20px;
+        font-size:1.8em;
+        color:#9A5BB4;
+        font-weight:bold;
+    }
+.contact-form{
+        width:65%;
+        margin:0 auto;
+        background-color:white;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 3px 10px rgba(154,91,180,0.1);
+    }
+.form-group{
+        margin-bottom:20px;
+    }
+label{
+        display:block;
+        margin-bottom:8px;
+        font-weight:bold;
+        color:#9A5BB4;
+    }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+        width:100%;
+        padding:12px;
+        border:2px solid #E6C7FF;		
+		border-radius:8px;
+		box-sizing:border-box;
+		font-size:16px;
+		transition:border 0.3s;
+	}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus{
+        border-color:#9A5BB4;
+        outline:none;
+    }
+textarea{
+        height:180px;
+        resize:vertical;
+    }
+button{
+        background-color:white;
+        color:white;
+        padding: 14px 25px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        font-size:17px;
+        font-weight:bold;
+        transition:background-color 0.3s;
+        display:block;	
+        margin:0 auto;
+        width:50%;
+    }
+button:hover{
+        background-color:white;
+    }		
+.contact-info{
+        margin-top:40px;
+        padding:25px;
+        background-color:white;
+        border-radius:10px;
+        border: 2px dashed #E6C7FF;		
+	}
+.contact-info h2{
+        color: #9A5BB4;
+		border-bottom:2px solid #FFB6C1;
+		padding-bottom:10px;
+		margin-top:0;
+	}
+.contact-info p{
+        margin:15px 0;
+		line-height:1.6;
+	}
+.error{
+        color:#E75480;
+        font-size:14px;
+        margin-top:5px;
+        display:block;
+    }
+.social-media{
+        margin-top:20px;
+        text-align:center;
+    }
+.social-media a{
+        color: #9A5BB4;
+		font-size:24px;
+		margin: 0 10px;
+		transition: color 0.3s;
+	}
+.social-media a:hover{
+	color:#7E469E;
+}
+@media (max-width:768px){
+.container{
+        width:95%;
+    }
+.contact-form{
+       width:90%;
+	}
+button{
+       width:100%;
+    }	   
+	   
+	</style>
+</head>
+<body>
+     
+	 
+	  <div class="container">
+	    <div class="logo">ثلث<br>محمصة ومقهى</div>
+		
+		<h1>تواصل معنا</h1>
+        <div class="contact-form">
+            <form id="contactForm" method="post">
+			   <div class="form-group">
+			       <label for="name">الاسم الكامل:</label>
+				   <input type="text" id="name" name="name" required="" placeholder="أدخل اسمك هنا">
+				   <span id="nameError" class="error"></span>
+				</div>
+                <div class="form-group">
+			       <label for="email">البريد الالكتروني:</label>
+				   <input type="email" id="email" name="email" required="" placeholder="example@example.com">
+				   <span id="emailError" class="error"></span>
+				</div>  
+                <div class="form-group">
+			       <label for="phone">رقم الهاتف:</label>
+				   <input type="tel" id="phone" name="phone" required="" placeholder="05XXXXXXXX">
+				   <span id="phoneError" class="error"></span>
+				</div>
+                <div class="form-group">
+			       <label for="message">الرسالة:</label>
+				   <textarea id="message" name="message" required="" placeholder="أكتب رسالتك هنا"></textarea>
+				   <span id="messageError" class="error"></span>
+				</div>
+                <div class="form-group">
+			       <button type="submit">
+				       <i class="fas fa-paper-plane"></i> 
+					</button>   
+				</div>
+            </form>
+        </div>			
+            				
+		 <div class="contact-info">
+		  <h2>معلومات الاتصال</h2>
+	    <p> <i class="fas fa-map-marker-alt"></i>
+		<strong>عنوان المقهى:</strong>سلطانة،مقابل جرير</p>
+		
+		 <p> <i class="fas fa-phone"></i>
+		<strong>رقم الهاتف:</strong>0501234567</p>
+		
+		 <p> <i class="fas fa-envelope"></i>
+		<strong>البريد الالكتروني:</strong>thulth@gmail.com</p>
+		
+		 <p> <i class="fas fa-clock"></i>
+		<strong>ساعات العمل:</strong>يومياً من 7 صباحاً حتى 1صباحاً</p>
+		
+		<div class="social-media">
+		  <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+		
+<div class="social-media">
+		  <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+		  
+		  <div class="social-media">
+		  <a href="#" aria-label="سناب شات"><i class="fab fa-snapchat"></i></a>
+		  
+		  <div class="social-media">
+		  <a href="#" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+		  
+		  </div>
+        </div>
+	</div>
+  
+  
+    <script>
+	    document.getElementByid('contactForm').addEventListener('submit',function(event){
+		let isValid= true;
+		
+		const name= document.getElementByid('name').value;
+		
+		if (name.trim()==="){
+		  document.getElementByid('nameError').textContent='الرجاء إدخال الاسم';
+		  isValid= false;}
+		         else if (name.length<2){
+				    document.getElementByid('nameError').textContent='الاسم يجب ان يكون اكثر من حرفين';
+					isValid=false;}
+				 else {
+    				document.getElementByid('nameError').textContent=";}
+                 					
+		const email= document.getElementByid('email').value;
+		
+		const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		
+		if (!emailPattern.test(email)){
+		    document.getElementByid('emeilError').textContent='الرجاء إدخال بريد الكتروني صحيح';
+			isValid=false;}
+			    else { 
+				  document.getElementByid('emeilError').textContent=";
+
+        const phone= document.getElementByid('phone').value;
+		
+		if (phone && !/^05\d{8}$/.test(phone)){
+		    document.getElementByid('phoneError').textContent='الرجاء إخال رقم هاتف صحيح';
+			isValid=false;}
+			    else { 
+				  document.getElementByid('phoneError').textContent=";
+		  		
+		const message= document.getElementByid('message').value;
+		
+		if (message.trim()==="){
+		  document.getElementByid('messageError').textContent='الرجاء إخال الرسالة';
+		  isValid= false;}
+		         else if (message.length<5){
+				    document.getElementByid('messageError').textContent='الرسالة يجب ان تكون اكثر من 5 احرف';
+					isValid=false;}
+				 else {
+    				document.getElementByid('messageError').textContent=";}
+				
+                    if (!isValid){
+                            event.preventDefault()	}
+            });
+        </script>
+    
+	</body>
+</html>
